@@ -1,3 +1,6 @@
+# File: hello.py
+# Desc: Display the text "Hello World" in the app.
+
 import kivy
 from kivy.app import App
 from kivy.uix.label import Label

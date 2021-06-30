@@ -1,3 +1,6 @@
+# File: input.py
+# Desc: Use user input to return a sentence about the input.
+
 import kivy
 from kivy.app import App
 from kivy.uix.label import Label
