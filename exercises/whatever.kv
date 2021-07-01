@@ -1,0 +1,42 @@
+# File: my.kv
+# Desc: Recreate MyApp using kv language in addition to design.py.
+
+<MyGridLayout>
+    # Define variables
+    name: name
+    pizza: pizza
+    color: color
+
+    GridLayout:
+        cols: 1
+        # Width and height of the entire app
+        size: root.width, root.height
+
+        # Grid layout within main grid layout
+        GridLayout:
+            cols: 2
+
+            # Add widgets
+            Label:
+                text: "Name"
+            TextInput:
+                id: name
+                multiline: False
+
+            Label:
+                text: "Favorite Pizza"
+            TextInput:
+                id: pizza
+                multiline: False
+
+            Label:
+                text: "Color"
+            TextInput:
+                id: color
+                multiline: False
+
+        # Button in main grid layout
+        Button:
+            text: "Submit"
+            font_size: 32
+            on_press: root.press()

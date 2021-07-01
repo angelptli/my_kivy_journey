@@ -1,15 +1,20 @@
-# File: design.py
-# Desc: Move customization code into separate kv file.
+# File: builder.py
+# Desc: Make Kivy look for a specifically named Kv file to load.
 
 import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
+from kivy.lang import Builder
+
+# Load Kv file with whatever path or filename. This looks only for whatever.kv.
+Builder.load_file('whatever.kv')
+# # Redundant alternative way (DON'T DO THIS)
+# Builder.load_file("""Paste everything from whatever.kv here""")
 
 
 class MyGridLayout(Widget):
     # kvlang customize these objects
-
     name = ObjectProperty(None)
     pizza = ObjectProperty(None)
     color = ObjectProperty(None)
@@ -35,7 +40,7 @@ class MyGridLayout(Widget):
         self.color.text = ""
 
 
-class MyApp(App):
+class NiceApp(App):
     """Display Hello World in the app.
 
     :param App: Contains the build() method
@@ -51,4 +56,4 @@ class MyApp(App):
 
 if __name__ == '__main__':
     # Run MyApp
-    MyApp().run()
+    NiceApp().run()
