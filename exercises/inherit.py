@@ -15,6 +15,7 @@ class MyLayout(Widget):
 
 
 class NiceApp(App):
+    
     def build(self):
         return MyLayout()
 

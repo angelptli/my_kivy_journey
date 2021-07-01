@@ -41,6 +41,7 @@ class MyGridLayout(Widget):
 
 
 class NiceApp(App):
+    
     def build(self):
         return MyGridLayout()
 

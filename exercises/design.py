@@ -36,6 +36,7 @@ class MyGridLayout(Widget):
 
 
 class MyApp(App):
+    
     def build(self):
         return MyGridLayout()
 
