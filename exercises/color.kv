@@ -1,0 +1,56 @@
+#:import utils kivy.utils
+
+# File: color.kv
+# Desc: Add color to submit button and text input boxes.
+
+<MyGridLayout>
+    # Define variables
+    name: name
+    pizza: pizza
+    color: color
+
+    GridLayout:
+        cols: 1
+        # Width and height of the entire app
+        size: root.width, root.height
+
+        # Grid layout within main grid layout
+        GridLayout:
+            cols: 2
+
+            # Add widgets
+            Label:
+                text: "Name"
+            TextInput:
+                id: name
+                multiline: False
+                background_color: utils.get_color_from_hex('#79c3db')
+
+            Label:
+                text: "Favorite Pizza"
+            TextInput:
+                id: pizza
+                multiline: False
+                background_color: utils.get_color_from_hex('#79c3db')
+
+            Label:
+                text: "Color"
+            TextInput:
+                id: color
+                multiline: False
+                background_color: utils.get_color_from_hex('#79c3db')
+
+        # Button in main grid layout
+        Button:
+            text: "Submit"
+            font_size: 32
+            on_press: root.press()
+
+            # Get rid of default gray color aka no image
+            background_normal: ''
+            # R, G, B, Alpha(transperency/opacity). All between 0 and 1.
+            # value/255.0 = float between 0 and 1
+            # background_color: (238/255.0, 250/255.0, 0, 1)
+
+            # Use hex color code instead
+            background_color: utils.get_color_from_hex('#1677a8')
