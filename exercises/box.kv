@@ -1,0 +1,37 @@
+# File: box.kv
+# Desc: Customize size, spacing, and padding of buttons.
+
+<MyLayout>
+    BoxLayout:
+        # # Lay out boxes horizontally
+        # orientation: "horizontal"
+
+        # Lay out boxes vertically
+        orientation: "vertical"
+
+        # Size of the entire root window/screen
+        size: root.width, root.height
+
+        # Add space and padding around buttons
+        padding: 50
+        spacing: 20
+
+        Button:
+            text: "Hello World!"
+
+        Button:
+            text: "Bye World!"
+
+        Button:
+            text: "Pizza!"
+
+            # Position along x-axis
+            pos_hint: {'center_x': 0.5}
+
+            # size_hint: (0.5, 0.5)
+            size_hint: (1, 0.3)
+
+            # # For hard coding width and height
+            # size_hint: (None, None)
+            # width: 200
+            # height: 50
