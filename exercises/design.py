@@ -36,16 +36,7 @@ class MyGridLayout(Widget):
 
 
 class MyApp(App):
-    """Display Hello World in the app.
-
-    :param App: Contains the build() method
-    :type App: class
-    """
-
     def build(self):
-        """Display app with the MyGridLayout widgets.
-        """
-        # Return a label
         return MyGridLayout()
 
 

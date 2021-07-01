@@ -39,19 +39,9 @@ class MyGridLayout(Widget):
 
 
 class NiceApp(App):
-    """Display Hello World in the app.
-
-    :param App: Contains the build() method
-    :type App: class
-    """
-
     def build(self):
-        """Display app with the MyGridLayout widgets.
-        """
-        # Return a label
         return MyGridLayout()
 
 
 if __name__ == '__main__':
-    # Run MyApp
     NiceApp().run()
