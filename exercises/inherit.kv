@@ -1,0 +1,42 @@
+#:import utils kivy.utils
+
+# File: inherit.kv
+# Desc: Set default colors and font sizes for labels and buttons.
+
+<Button>
+    # Set default font size, default color, and desired color
+    font_size: 32
+    background_normal: ''
+    background_color: utils.get_color_from_hex('#1677a8')  # blue
+
+<TextInput>
+    background_color: utils.get_color_from_hex('#afd0e0')
+
+<Label>
+    font_size: 50
+
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+ 
+        padding: 10
+        spacing: 10
+
+        Label:
+            text: "Name"
+        TextInput:
+            multiline: False
+
+        Label:
+            text: "Pizza Order"
+        TextInput:
+            multiline: False
+
+        Button:
+            text: "Submit"
+
+        Button:
+            text: "Clear"
+            # Change this button's color from blue to gray
+            background_color: utils.get_color_from_hex('#94a7aF')
