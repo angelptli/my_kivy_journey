@@ -1,0 +1,25 @@
+#:import utils kivy.utils
+
+# File: bg.kv
+# Desc: Set background color of labels.
+
+<MyLayout>
+    # This would override the python files import Window method
+    canvas.before:
+        Color:
+            rgba: (240/255, 240/255, 240/255, 1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 50
+        spacing: 20
+
+        Button:
+            text: "Ok"
+
+        Button:
+            text: "Return"

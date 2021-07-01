@@ -7,7 +7,6 @@ from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
-# Load Kv file with whatever path or filename. This looks only for whatever.kv.
 Builder.load_file('color.kv')
 
 

@@ -1,3 +1,5 @@
+#:import utils kivy.utils
+
 # File: label_color.kv
 # Desc: Set background color of labels.
 
@@ -24,14 +26,22 @@
         Label:
             text: "Name"
             font_size: 45
-            # Set label color
-            background_color: (0, 0, 0, 1)
+            # Set label color. It must use RGBA numbers, not utils method.
+            background_color: (44/255.0, 110/255.0, 220/255.0, 1)
             canvas.before:
                 Color:
+                    # self as in the root layout MyLayout
                     rgba: self.background_color
                 Rectangle:
                     size: self.size
                     pos: self.pos
+
+            # Text Properties
+            color: (0, 1, 0, 0.5)
+            bold: True
+            italic: True
+            outline_color: (0, 0, 0)
+            outline_width: 2
 
         TextInput:
             multiline: False
