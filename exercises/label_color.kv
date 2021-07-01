@@ -1,5 +1,3 @@
-#:import utils kivy.utils
-
 # File: label_color.kv
 # Desc: Set background color of labels.
 
@@ -12,26 +10,25 @@
 <TextInput>
     background_color: utils.get_color_from_hex('#afd0e0')
 
-<Label>
-    font_size: 50
+# # Can't use this if want to set custom label colors
+# <Label>
+#     font_size: 50
 
 <MyLayout>
     BoxLayout:
         orientation: "vertical"
         size: root.width, root.height
- 
         padding: 10
         spacing: 10
 
         Label:
             text: "Name"
             font_size: 45
-            
             # Set label color
-            background_color: utils.get_color_from_hex('#afd0e0')
+            background_color: (0, 0, 0, 1)
             canvas.before:
                 Color:
-                    rgba: self.background_color: 
+                    rgba: self.background_color
                 Rectangle:
                     size: self.size
                     pos: self.pos
