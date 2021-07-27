@@ -9,6 +9,7 @@ from kivy.lang import Builder
 # Designate our .kv design file
 Builder.load_file('update_label.kv')
 
+
 class MyLayout(Widget):
     def press(self):
         # Create variables for our widget
@@ -19,6 +20,7 @@ class MyLayout(Widget):
 
         # Clear input box
         self.ids.name_input.text = ''
+
 
 class AwesomeApp(App):
     def build(self):

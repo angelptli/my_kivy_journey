@@ -10,6 +10,7 @@ Window.size = (500, 700)
 # Designate our .kv design file
 Builder.load_file('calc.kv')
 
+
 class MyLayout(Widget):
     def clear(self):
         self.ids.calc_input.text = '0'
@@ -102,6 +103,7 @@ class MyLayout(Widget):
             # Print the answer in the text box
             self.ids.calc_input.text = str(answer)
         '''
+
 
 class CalculatorApp(App):
     def build(self):

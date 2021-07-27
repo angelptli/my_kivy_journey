@@ -1,5 +1,5 @@
 # File: float_layout.py
-# Desc: Accomodate code for button float layout exercise for Kv file. 
+# Desc: Accommodate code for button float layout exercise for Kv file.
 
 import kivy
 from kivy.app import App

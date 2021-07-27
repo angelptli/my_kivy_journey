@@ -1,5 +1,5 @@
 # File: images.py
-# Desc: Accomodate python code for image adding exercise.
+# Desc: Accommodate python code for image adding exercise.
 
 import kivy
 from kivy.app import App

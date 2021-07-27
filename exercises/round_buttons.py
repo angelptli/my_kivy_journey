@@ -9,12 +9,14 @@ Window.size = (380, 600)
 # Designate our .kv design file
 Builder.load_file('round_buttons.kv')
 
+
 class MyLayout(Widget):
     pass
 
+
 class GreeterChanApp(App):
     def build(self):
-        Window.clearcolor = (1,1,1,1)
+        Window.clearcolor = (1, 1, 1, 1)
         return MyLayout()
 
 if __name__ == '__main__':

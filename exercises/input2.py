@@ -42,7 +42,6 @@ class MyGridLayout(GridLayout):
         # Add the new top_grid to our app
         self.add_widget(self.top_grid)
 
-
         # Create a submit button underneath
         self.submit = Button(text="Submit", font_size=32)
         # Bind the button to make it clickable
