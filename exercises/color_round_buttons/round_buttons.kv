@@ -1,0 +1,47 @@
+<MyLayout>
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        padding: 50
+        spacing: 20
+
+        RoundedPrompt:
+            font_size: 40
+            text: "Hello!"
+
+        RoundedButton:
+            font_size: 18
+            text: "GoodBye!"
+            pos_hint: {'center_x': 0.5}
+            size_hint: (1, .3)
+            # background_color: (66/255, 245/255, 239/255, 1)
+            # # This gets rid of the grey default tint in the background
+            # background_normal: ''
+            on_press: print('Goodbye!')
+
+<RoundedButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            # rgba: (102/255, 178/255, 230/255, 1)
+            # Blue
+            rgba: (102/255, 178/255, 205/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [30]
+
+<RoundedPrompt@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            # Pastel purple
+            rgba: (225/255, 209/255, 235/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [30]
