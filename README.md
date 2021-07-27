@@ -3,7 +3,10 @@
 A journey into learning how to build mobile applications using Kivy.
 #
 ### Checkpoints
-- [x] [Checkpoint 1 - First Achievement (Package and run an app)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/calc)
+- [x] [Checkpoint 1 - First Achievement (Package and Run Calculator App)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/calc)
+- [x] [Checkpoint 2 - Second Achievement (Create Colorful Rounded Buttons)]()
+- [x] [Checkpoint 2 - Third Achievement (Post Image in App)]()
+
 #
 ### Learning Resources
-- [Codemy.com Channel - Python GUI's With Kivy](https://youtube.com/playlist?list=PLCC34OHNcOtpz7PJQ7Tv7hqFBP_xDDjqg)
+- [Codemy.com YT Channel - "Python GUI's With Kivy"](https://youtube.com/playlist?list=PLCC34OHNcOtpz7PJQ7Tv7hqFBP_xDDjqg)
