@@ -5,11 +5,11 @@ A journey into learning how to build mobile applications using Kivy.
 > Kivy is a free and open source Python framework for developing mobile apps and other multitouch application software with a natural user interface.
 #
 ### Checkpoints
-- [x] [Checkpoint 1 - First Achievement (Package and Run Calculator App)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/calc)
-- [x] [Checkpoint 2 - Second Achievement (Create Colorful Rounded Buttons)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/color_round_buttons)
-- [x] [Checkpoint 3 - Third Achievement (Post Image onto App)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/upload_image)
-- [x] [Checkpoint 4 - Fourth Achievement (Host Image Viewer App)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/image_view)
-- [x] [Checkpoint 5 - Fifth Achievement (Implement Spell Check)](https://github.com/angelptli/my_kivy_journey/tree/exercise/exercises/spell_check)
+- [x] [Checkpoint 1 - First Achievement (Package and Run Calculator App)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/01_calc)
+- [x] [Checkpoint 2 - Second Achievement (Create Colorful Rounded Buttons)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/02_color_round_buttons)
+- [x] [Checkpoint 3 - Third Achievement (Post Image onto App)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/03_upload_image)
+- [x] [Checkpoint 4 - Fourth Achievement (Host Image Viewer App)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/04_image_view)
+- [x] [Checkpoint 5 - Fifth Achievement (Implement Spell Check)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/05_spell_check)
 
 #
 ### Learning Resources
