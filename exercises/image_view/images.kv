@@ -1,0 +1,20 @@
+# File: images.kv
+# Desc: Display an image in the app and customize the image's size.
+
+<MyLayout>
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        # # Uncomment to obtain more of a true size
+        # padding: 50
+        # spacing: 20
+
+        Image:
+            source: 'images/one_hash_brown_close_up.jpg'
+            allow_stretch: True
+            keep_ratio: True
+
+        # Button:
+        #     text: "one hashbrown close up"
