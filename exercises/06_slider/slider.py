@@ -1,6 +1,5 @@
 from kivy.app import App
 from kivy.uix.widget import Widget
-from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 # Only need this if doing all markup from python file
 # from kivy.uix.slider import Slider

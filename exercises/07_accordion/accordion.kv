@@ -1,0 +1,31 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        # Spans to the entirety of the app
+        size: root.width, root.height
+
+        Accordion:
+            orientation: 'vertical'
+            # orientation: 'horizontal'
+
+            AccordionItem:
+                title: 'App 1 - Calculator'
+                Image:
+                    source: '../../images/calculator.png'
+                # Label:
+                #     text: 'Panel 1 Text'
+                #     font_size: 32
+
+            AccordionItem:
+                title: 'App 2 - GreeterChan'
+                Image:
+                    source: '../../images/greeter_with_colors.png'
+                # Label:
+                #     text: 'Panel 2 Text'
+                #     font_size: 32
+
+            AccordionItem:
+                title: 'App 3 - [Enter text here]'
+                Label:
+                    text: 'Place an image here'
+                    font_size: 32

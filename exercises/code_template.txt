@@ -3,7 +3,6 @@
 # ------------------------------------------------
 from kivy.app import App
 from kivy.uix.widget import Widget
-from kivy.properties import ObjectProperty
 from kivy.lang import Builder
 
 # Designate our .kv design file
@@ -28,7 +27,7 @@ if __name__ == '__main__':
 # ------------------------------------------------
 <MyLayout>
     BoxLayout:
-        orientation: "vertical"
+        orientation: 'vertical'
         # Spans to the entirety of the app
         size: root.width, root.height
 
