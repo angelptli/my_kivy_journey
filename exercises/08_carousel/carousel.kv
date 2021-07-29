@@ -1,0 +1,43 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        # Spans to the entirety of the app
+        size: root.width, root.height
+
+        Carousel:
+            # Scroll direction
+            # direction: 'right'
+            # direction: 'left'
+            # direction: 'top'
+            direction: 'bottom'
+
+            Image:
+                source: '../../images/calculator.png'
+
+            Image:
+                source: '../../images/greeter_with_colors.png'
+
+            Image:
+                source: '../../images/image_post.png'
+
+            Image:
+                source: '../../images/image_viewer.png'
+
+            Image:
+                source: '../../images/spell_checker.png'
+
+            Image:
+                source: '../../images/slider_horizontal_1.png'
+
+            Image:
+                source: '../../images/slider_horizontal_2.png'
+
+            Image:
+                source: '../../images/slider_vertical_1.png'
+
+            Image:
+                source: '../../images/slider_vertical_2.png'
+
+            # Online image
+            AsyncImage:
+                source: 'https://github.com/angelptli/my_kivy_journey/blob/master/images/Kivy_logo.png?raw=true'
