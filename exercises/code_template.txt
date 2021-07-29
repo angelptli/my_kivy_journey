@@ -9,8 +9,10 @@ from kivy.lang import Builder
 # Designate our .kv design file
 Builder.load_file('filename.kv')
 
+
 class MyLayout(Widget):
     pass
+
 
 class NameOfApp(App):
     def build(self):
@@ -26,8 +28,8 @@ if __name__ == '__main__':
 # ------------------------------------------------
 <MyLayout>
     BoxLayout:
-
         orientation: "vertical"
+        # Spans to the entirety of the app
         size: root.width, root.height
 
 # ------------------------------------------------

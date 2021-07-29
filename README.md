@@ -10,6 +10,7 @@ A journey into learning how to build mobile applications using Kivy.
 - [x] [Checkpoint 3 - Third Achievement (Post Image onto App)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/03_upload_image)
 - [x] [Checkpoint 4 - Fourth Achievement (Host Image Viewer App)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/04_image_view)
 - [x] [Checkpoint 5 - Fifth Achievement (Implement Spell Check)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/05_spell_check)
+- [x] [Checkpoint 6 - Sixth Achievement (Slide a Slider)](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/06_slider)
 
 #
 ### Learning Resources

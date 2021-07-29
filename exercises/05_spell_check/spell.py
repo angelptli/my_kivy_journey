@@ -6,6 +6,7 @@ from kivy.core.spelling import Spelling
 # Designate our .kv design file
 Builder.load_file('spell.kv')
 
+
 class MyLayout(Widget):
     def press(self):
         # Create instance of Spelling
@@ -28,6 +29,7 @@ class MyLayout(Widget):
 
         # Update our label
         self.ids.word_label.text = f'{x}'
+
 
 class NameOfApp(App):
     def build(self):

@@ -5,6 +5,7 @@ from kivy.lang import Builder
 # Designate our .kv design file
 Builder.load_file('menu.kv')
 
+
 class MyLayout(Widget):
     def selected(self, filename):
         try:
@@ -12,6 +13,7 @@ class MyLayout(Widget):
             print(filename[0])
         except:
             pass
+
 
 class YourImagesApp(App):
     def build(self):
