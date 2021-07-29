@@ -4,4 +4,5 @@ One purpose of a slider is to scale an amount or object. Users can customize the
 <br/>
 <img src="../../images/slider_horizontal_1.png" width="500" height="350">
 <img src="../../images/slider_horizontal_2.png" width="500" height="350">
-<img src="../../images/slider_vertical.png" width="500" height="350">
+<img src="../../images/slider_vertical_1.png" width="500" height="350">
+<img src="../../images/slider_vertical_2.png" width="500" height="350">
