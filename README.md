@@ -13,6 +13,7 @@ A journey into learning how to build mobile applications using Kivy.
 - [x] [Checkpoint 6 - Slide a Slider](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/06_slider)
 - [x] [Checkpoint 7 - Display Content in Accordion Panels](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/07_accordion)
 - [x] [Checkpoint 8 - Carousel Scroll Images](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/08_carousel)
+- [x] [Checkpoint 9 - Check Off Pizza Toppings](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/09_check_box)
 
 #
 ### Learning Resources
