@@ -28,7 +28,6 @@ if __name__ == '__main__':
 <MyLayout>
     BoxLayout:
         orientation: 'vertical'
-        # Spans to the entirety of the app
         size: root.width, root.height
 
 # ------------------------------------------------
