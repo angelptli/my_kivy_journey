@@ -1,0 +1,21 @@
+<MyLayout>
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        Label:
+            markup: True
+            font_size: 32
+            text: 'This is a [color=#FCD303][b]Bold[/b][/color] [font=times]text[/font]'
+
+        Label:
+            markup: True
+            font_size: 32
+            text: 'This is a [size=20][i]Italic[/i][/size] text'
+
+        Button:
+            markup: True
+            font_size: 32
+            # sup (subscript) moves text up, sub (superscript) moves text down
+            text: '[u]Click[/u] [sup]here[/sup] [sub]NOW[/sub] [s]now[/s]!'

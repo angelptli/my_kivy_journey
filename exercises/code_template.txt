@@ -26,6 +26,7 @@ if __name__ == '__main__':
 #                 KV FILE TEMPLATE
 # ------------------------------------------------
 <MyLayout>
+
     BoxLayout:
         orientation: 'vertical'
         size: root.width, root.height

@@ -1,0 +1,1214 @@
+#:import Factory kivy.factory.Factory
+
+# Monday Popup
+<MondayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Monday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+            spacing: 1
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Water plants[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, .5)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Clean backyard windows[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, .5)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+# Tuesday Popup
+<TuesdayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Tuesday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Bake some beans[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Prepare supper[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Give Teddy his meds[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+# Wednesday Popup
+<WednesdayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Wednesday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Feed the birds[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Watch the olympics at 19:00 UTC[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+            
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Give Teddy his favorite treat[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+# Thursday Popup
+<ThursdayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Thursday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+
+            ToggleButton:
+                state: 'down'
+                markup: True
+                text: "[size=19][color=#C9DAF8][font=Comfortaa_Bold]Go to Bobby's and feed the gerbils[/font][/color][/size]"
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Repair the porch[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+# Friday Popup
+<FridayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Friday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Drink oolong tea[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Watch olympics at 20:30 UTC[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+# Saturday Popup
+<SaturdayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Saturday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Pick movie[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Make popcorn[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Watch movie at 18:00 UTC[/font][/color][/size]'
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+# Sunday Popup
+<SundayPopup@Popup>
+    size_hint: 1, .85
+    pos_hint: {'x': 0, 'top': 0.9}
+    title: "- Sunday's Tasks -"
+    title_color: (207/255, 226/255, 243/255, 1)
+    title_align: 'center'
+    title_size: 18
+    separator_height: 0
+    background_normal: ''
+    background_color: (61/255, 133/255, 198/255, 1)
+    background: ''
+    title_font: 'Comfortaa_Bold'
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        BoxLayout:
+            orientation: 'vertical'
+            size: root.width, root.height
+            spacing: 2
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    Color:
+                        rgba: (1, 1, 1, 1)
+                    RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+            ToggleButton:
+                markup: True
+                text: ''
+                text_size: self.size
+                padding_x: 30
+                valign: 'center'
+                background_color: (0, 0, 0, 0)
+                background_normal: ''
+                canvas.before:
+                    # Color:
+                    #     rgba: (1, 1, 1, 1)
+                    # RoundedRectangle:
+                    #     size: self.size
+                    #     pos: self.pos
+                    #     radius: [10]
+                    Color:
+                        rgba: (61/255, 133/255, 198/255, 1) if self.state == 'normal' else (159/255, 197/255, 232/255, 1)
+                    RoundedRectangle:
+                        size: self.width, self.height-1.5
+                        pos: self.pos
+                        pos: self.x, self.y+1
+
+
+        Button:
+            markup: True
+            text: '[size=19][color=#C9DAF8][font=Comfortaa_Bold]Close[/font][/color][/size]'
+            font_size: 11
+            on_release: root.dismiss()
+            background_normal: ''
+            background_color: (11/255, 83/255, 148/255, 1)
+            size_hint_y: 0.1
+
+<MyLayout>
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        canvas.before:
+            Color:
+                rgba: (7/255, 55/255, 99/255, 1)
+            Rectangle:
+                size: self.size
+                pos: self.pos
+
+        # Empty space
+        Label:
+            size_hint_y: 0.55
+
+        # Header button
+        HeaderButton:
+            markup: True
+            text: '[color=#C9DAF8][font=Comfortaa_Bold][size=22]- My Planner -[/size][/font]\n[font=Comfortaa_Regular][size=15]Today is Friday, July 10[/size][/font][/color]'
+            halign: 'center'
+            size_hint_y: 1.7
+
+        # Monday button
+        MondayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Monday[/font][/color][/size]'
+            on_release: Factory.MondayPopup().open()
+
+        # Tuesday button
+        TuesdayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Tuesday[/font][/color][/size]'
+            on_release: Factory.TuesdayPopup().open()
+
+        # Wednesday button
+        WednesdayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Wednesday[/font][/color][/size]'
+            on_release: Factory.WednesdayPopup().open()
+
+        # Thursday button
+        ThursdayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Thursday[/font][/color][/size]'
+            on_release: Factory.ThursdayPopup().open()
+
+        # Friday button
+        FridayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Friday[/font][/color][/size]'
+            on_release: Factory.FridayPopup().open()
+
+        # Saturday button
+        SaturdayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Saturday[/font][/color][/size]'
+            on_release: Factory.SaturdayPopup().open()
+
+        # Sunday button
+        SundayButton:
+            markup: True
+            text: '[size=20][color=#C9DAF8][font=Comfortaa_Bold]Sunday[/font][/color][/size]'
+            on_release: Factory.SundayPopup().open()
+
+        # Empty space
+        Label:
+            size_hint_y: 0.4
+
+# Header button class
+<HeaderButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (61/255, 133/255, 198/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [17]
+
+# Monday button class
+<MondayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (159/255, 197/255, 232/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.pos
+            pos: self.x, self.y+1
+
+# Tuesday button class
+<TuesdayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (159/255, 197/255, 232/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.pos
+            pos: self.x, self.y+1
+
+# Wednesday button class
+<WednesdayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (159/255, 197/255, 232/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.pos
+            pos: self.x, self.y+1
+
+# Thursday button class
+<ThursdayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (159/255, 197/255, 232/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.pos
+            pos: self.x, self.y+1
+
+# Friday button class
+<FridayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (61/255, 133/255, 198/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.pos
+            pos: self.x, self.y+1
+
+# Saturday button class
+<SaturdayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (61/255, 133/255, 198/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.pos
+            pos: self.x, self.y+1
+
+# Sunday button class
+<SundayButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+        Color:
+            rgba: (61/255, 133/255, 198/255, 1)
+        RoundedRectangle:
+            size: self.width, self.height-1.5
+            pos: self.x, self.y+1
