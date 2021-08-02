@@ -15,7 +15,7 @@ A journey into learning how to build mobile applications using Kivy.
 - [x] [Checkpoint 8 - Carousel Scroll Images](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/08_carousel)
 - [x] [Checkpoint 9 - Check Off Pizza Toppings](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/09_check_box)
 - [x] [Checkpoint 10 - Pineapple Pizza?](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/10_radio_button)
-- [x] [Checkpoint 10 - Create Convenient Planner App](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/10_radio_button)
+- [x] [Checkpoint 11 - Create Convenient Planner App](https://github.com/angelptli/my_kivy_journey/tree/master/exercises/10_radio_button)
 
 #
 ### Learning Resources
